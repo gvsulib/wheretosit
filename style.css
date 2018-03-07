@@ -1,0 +1,76 @@
+/* TODO(you): Write the CSS to finish the assignment! */
+.choice-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.choice-grid div {
+  background-color: #f4f4f4;
+  border-style: solid;
+  border-color: #dcdcdc;
+  border-width: 1px;
+  width: 32.5%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.choice-grid img {
+  width: 100%;
+}
+
+.choice-grid .checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 700px) {
+ article {
+ width: 95%;
+ }
+}
+
+@media (max-width: 500px) {
+ .choice-grid div {
+   width: 49%;
+ }
+ header div {
+   display: none;
+ }
+}
+
+.hidden {
+  display: none;
+}
+
+#result {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+#result #title {
+  font-family: 'Helvetica', sans-serif;
+  justify-content: flex-start;
+  margin: 0;
+  font-size: 30px;
+}
+
+#result #body {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+#result #restart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color:  #cecece;
+  height: 50px;
+}
+
+#result #restart:hover {
+  background-color: #e0e0e0;
+}
