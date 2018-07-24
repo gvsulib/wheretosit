@@ -38,20 +38,26 @@ function addAnswers(choice) {
 
 function answerQuestions(choice) {
   if(choice.dataset.questionId === 'one') {
-    changeImage(choice, 0, 9);
+    changeImage(choice, 0, 5);
     addAnswers(choice);
   } else if(choice.dataset.questionId === 'two') {
-    changeImage(choice, 9, 18);
+    changeImage(choice, 5, 11);
+    addAnswers(choice);
+  } else if(choice.dataset.questionId === 'three') {
+    changeImage(choice, 11, 17);
+    addAnswers(choice);
+  } else if(choice.dataset.questionId === 'four') {
+    changeImage(choice, 17, 21);
     addAnswers(choice);
   } else {
-    changeImage(choice, 18, 27);
+    changeImage(choice, 21, 24);
     addAnswers(choice);
   }
 }
 
 function selectItem(event) {
   answerQuestions(event.currentTarget);
-  if(answers.length === 3) {
+  if(answers.length === 5) {
     getResults();
     displayResults();
   }

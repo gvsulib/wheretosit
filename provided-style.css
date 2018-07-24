@@ -1,12 +1,4 @@
-/**
 
-  NOTE TO STUDENT:
-  Please do not modify this file!
-
-  Please add your CSS to style.css instead: This will help the TAs grade your
-  homework because your style edits are all in one place.
-
-**/
 
 article {
   margin: auto;
@@ -89,7 +81,6 @@ p {
 
 .question-name {
   align-items: center;
-  background-image: url('./images/background.gif');
   display: flex;
   height: 425px;
   justify-content: center;
@@ -98,10 +89,26 @@ p {
   width: 100%;
 }
 
+.question-name.one {
+  background-image: url('./images/ltt1.jpg');
+}
+.question-name.two {
+  background-image: url('./images/ltt2.jpg');
+}
+.question-name.three {
+  background-image: url('./images/ltt3.jpg');
+}
+.question-name.four {
+  background-image: url('./images/ltt4.jpg');
+}
+.question-name.five {
+  background-image: url('./images/ltt5.jpg');
+}
+
 .question-name h1 {
   background-color: rgba(255,255,255, 0.9);
   color: black;
-  font-family: 'Pangolin', 'Trebuchet MS', cursive;
+  font-family: 'Palatino', 'Times New Roman', serif;
   font-size: 60px;
   padding: 10px;
   max-width: 75%;
