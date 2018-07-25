@@ -9,6 +9,16 @@ const checked_image = "images/checked.png"
 let answers =[];
 let finalPicks = new Map();
 
+function showObject(obj) {
+  var result = "";
+  for (var p in obj) {
+    if( obj.hasOwnProperty(p) ) {
+      result += p + " , " + obj[p] + "\n";
+    } 
+  }              
+  return result;
+}
+
 function changeImage(choice, start, end) {
   const image = choice.querySelector('.checkbox');
 
@@ -38,19 +48,19 @@ function addAnswers(choice) {
 
 function answerQuestions(choice) {
   if(choice.dataset.questionId === 'one') {
-    changeImage(choice, 0, 5);
+    changeImage(choice, 0, 8);
     addAnswers(choice);
   } else if(choice.dataset.questionId === 'two') {
-    changeImage(choice, 5, 11);
+    changeImage(choice, 8, 16);
     addAnswers(choice);
   } else if(choice.dataset.questionId === 'three') {
-    changeImage(choice, 11, 17);
+    changeImage(choice, 16, 24);
     addAnswers(choice);
   } else if(choice.dataset.questionId === 'four') {
-    changeImage(choice, 17, 21);
+    changeImage(choice, 24, 32);
     addAnswers(choice);
   } else {
-    changeImage(choice, 21, 24);
+    changeImage(choice, 32, 40);
     addAnswers(choice);
   }
 }
@@ -84,11 +94,13 @@ function displayResults() {
   console.log(finalPicks);
   const title = document.querySelector('#title');
   const body = document.querySelector('#body');
-  if(finalPicks.get('two') === finalPicks.get('three')) {
-    getText(title, body, finalPicks.get('two'));
-  } else {
-    getText(title, body, finalPicks.get('one'))
-  }
+
+  // Choose one answer at random as the winner.  ¯\_(ツ)_/¯
+  var myArray = ["one","two","three","four","five"];
+  var rand = myArray[Math.floor(Math.random() * myArray.length)];
+
+  getText(title, body, finalPicks.get(rand))
+
 
   for(const option of answerChoices) {
     option.removeEventListener('click', selectItem);
@@ -109,6 +121,8 @@ function refresh() {
   answers = [];
   finalPicks.clear();
 }
+
+
 
 let restartQuiz = document.querySelector('#result');
 restartQuiz.addEventListener('click', refresh);
