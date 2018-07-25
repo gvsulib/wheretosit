@@ -87,6 +87,8 @@ const resultContainer = document.querySelector('#result');
 function getText(title, body, key) {
   title.textContent = "You got:" + ' ' + RESULTS_MAP[key]['title'];
   body.textContent = RESULTS_MAP[key]['contents'];
+
+  document.getElementById('tweetlink').href = 'http://twitter.com/home/?status=I%20got:%20' +  encodeURIComponent(RESULTS_MAP[key]['title']) + '!!%2520What%2520Library%2520Term%2520are%2520you%3F%2520https%3A%2F%2Fgvsu.edu%2Flibrary%2Flearntheterms';
   resultContainer.classList.remove("hidden");
 }
 
@@ -100,7 +102,6 @@ function displayResults() {
   var rand = myArray[Math.floor(Math.random() * myArray.length)];
 
   getText(title, body, finalPicks.get(rand))
-
 
   for(const option of answerChoices) {
     option.removeEventListener('click', selectItem);
