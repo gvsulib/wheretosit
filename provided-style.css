@@ -63,7 +63,7 @@ header div span {
 }
 
 header h1 {
-  color: #ee3322;
+  color: #093a6d;
   font-family: 'Helvetica', sans-serif;
   justify-content: flex-start;
   margin: 0;
@@ -82,34 +82,24 @@ p {
 .question-name {
   align-items: center;
   display: flex;
-  height: 425px;
+  height: 225px;
   justify-content: center;
   margin-bottom: 20px;
   text-align: center;
   width: 100%;
 }
 
-.question-name.one {
-  background-image: url('./images/ltt1.jpg');
+.question-name {
+  background-color: #0065a4;
+  color: #fff;
 }
-.question-name.two {
-  background-image: url('./images/ltt2.jpg');
-}
-.question-name.three {
-  background-image: url('./images/ltt3.jpg');
-}
-.question-name.four {
-  background-image: url('./images/ltt4.jpg');
-}
-.question-name.five {
-  background-image: url('./images/ltt5.jpg');
-}
+
 
 .question-name h1 {
   background-color: rgba(255,255,255, 0.9);
   color: black;
   font-family: 'Palatino', 'Times New Roman', serif;
-  font-size: 60px;
+  font-size: 32px;
   padding: 10px;
   max-width: 75%;
 }
