@@ -9,7 +9,7 @@ const RESULTS_MAP = {
   },
   'U': {
     title: 'Curriculum Materials Library',
-    contents: "You should study in the Curriculum Materials Library (CML). Your time is often limited and you need to study where the most resources are available to you. In this space you can plan a less, work on a project, do some research, and collaborate with others.",
+    contents: "You should study in the Curriculum Materials Library (CML). Your time is often limited and you need to study where the most resources are available to you. In this space you can plan a lesson, work on a project, do some research, and collaborate with others.",
   },
   'V': {
     title: 'Steelcase Reading Room',
@@ -17,7 +17,7 @@ const RESULTS_MAP = {
   },
   'W': {
     title: 'Steelcase Collaborative Area',
-    contents: "You should study in the Steelcase Collaborative Area. You enjoy variety in life and want the same in your study space. One dat you may want to work with others over lunch and the next you may want to work alone, although you're not opposed to some conversations happening around you.",
+    contents: "You should study in the Steelcase Collaborative Area. You enjoy variety in life and want the same in your study space. One day you may want to work with others over lunch and the next you may want to work alone, although you're not opposed to some conversations happening around you.",
   },
   'X': {
     title: 'Mary Idema Pew Library Innovation Zone',
