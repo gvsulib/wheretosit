@@ -4,8 +4,8 @@ const RESULTS_MAP = {
     contents: "You should study at Seidman House. You have an appreciation for the history and focus best in a space that feels open and peaceful. The beautiful view of nature is an added bonus.",
   },
   'T': {
-    title: 'Center for Health Sciences',
-    contents: "You should study in one of the spaces at the Center for Health Sciences (CHS), like the Frey Learning Center. You are active and like working on your own sometimes, but also love working within your cohort.",
+    title: 'Devos Center for Interprofessional Health',
+    contents: "You should study in one of the spaces at the Devos Center for Interprofessional Health (DCIH), like the Frey Foundation Learning Commons. You are active and like working on your own sometimes, but also love working within your cohort.",
   },
   'U': {
     title: 'Curriculum Materials Library',
