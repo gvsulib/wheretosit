@@ -117,7 +117,6 @@ function getText(title, body, result, letter, key) {
   body.textContent = RESULTS_MAP[key]['contents'];
   result.src = 'images/' + letter + '.jpg';
 
-  document.getElementById('tweetlink').href = 'http://twitter.com/home/?status=I%20got:%20' +  encodeURIComponent(RESULTS_MAP[key]['title']) + '!!%2520What%2520Library%2520Term%2520are%2520you%3F%2520https%3A%2F%2Fgvsu.edu%2Flibrary%2Flearntheterms';
   resultContainer.classList.remove("hidden");
   scrollToNext('end');
 }
