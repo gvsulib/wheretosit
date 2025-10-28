@@ -5,7 +5,7 @@ const RESULTS_MAP = {
   },
   'T': {
     title: 'Devos Center for Interprofessional Health',
-    contents: "You should study in one of the spaces at the Devos Center for Interprofessional Health (DCIH), like the Frey Foundation Learning Commons. You are active and like working on your own sometimes, but also love working within your cohort.",
+    contents: "You should study in one of the spaces at the Devos Center for Interprofessional Health (DCIH), like the Frey Foundation Library. You are active and like working on your own sometimes, but also love working within your cohort.",
   },
   'U': {
     title: 'Curriculum Materials Library',
